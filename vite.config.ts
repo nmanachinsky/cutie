@@ -88,7 +88,7 @@ export default defineConfig({
         name: 'Облачное утро',
         short_name: 'Облачное утро',
         description: 'Интерактивная новелла с ветвящимся сюжетом',
-        theme_color: '#a9d0f0',
+        theme_color: '#6a9bea',
         background_color: '#eaf3fc',
         display: 'standalone',
         orientation: 'portrait',
