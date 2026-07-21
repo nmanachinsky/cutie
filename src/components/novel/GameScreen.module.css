@@ -5,18 +5,6 @@
   overflow: hidden;
 }
 
-.topBar {
-  position: absolute;
-  top: env(safe-area-inset-top, 0);
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: flex-end;
-  gap: var(--space-sm);
-  padding: var(--space-md);
-  z-index: 5;
-}
-
 .foreground {
   position: absolute;
   left: 0;

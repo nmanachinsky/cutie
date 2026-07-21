@@ -6,11 +6,15 @@
   box-shadow: var(--shadow-raised);
   padding: var(--space-lg);
   min-height: 6rem;
+  max-height: 34vh;
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
   user-select: none;
 }
 
 .speaker {
+  flex-shrink: 0;
   display: inline-block;
   font-weight: 800;
   color: var(--color-primary-pressed);
@@ -18,16 +22,17 @@
 }
 
 .body {
+  flex: 1 1 auto;
+  min-height: 0;
   margin: 0;
   font-size: var(--text-lg);
   line-height: 1.5;
-  min-height: 3.2rem;
+  overflow-y: auto;
 }
 
 .hint {
-  position: absolute;
-  bottom: var(--space-sm);
-  right: var(--space-lg);
+  flex-shrink: 0;
+  align-self: flex-end;
   font-size: var(--text-sm);
   color: var(--color-text-muted);
 }

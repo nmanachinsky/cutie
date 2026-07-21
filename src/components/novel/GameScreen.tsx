@@ -3,10 +3,10 @@ import { scenes } from '../../content/scenes'
 import { getAvailableChoices } from '../../engine/engine'
 import type { Choice } from '../../engine/types'
 import { useGameStore } from '../../store/gameStore'
-import { BackgroundLayer } from './BackgroundLayer'
 import { SpriteLayer } from './SpriteLayer'
 import { TextBox } from './TextBox'
 import { ChoiceList } from './ChoiceList'
+import { GameMenu } from './GameMenu'
 import { Button } from '../ui/Button'
 import styles from './GameScreen.module.css'
 
@@ -19,7 +19,6 @@ interface GameScreenProps {
 export function GameScreen({ onOpenMenu, onOpenHistory, onOpenSaves }: GameScreenProps) {
   const currentSceneId = useGameStore((state) => state.currentSceneId)
   const flags = useGameStore((state) => state.flags)
-  const background = useGameStore((state) => state.background)
   const sprites = useGameStore((state) => state.sprites)
   const choose = useGameStore((state) => state.choose)
   const goToScene = useGameStore((state) => state.goToScene)
@@ -55,20 +54,9 @@ export function GameScreen({ onOpenMenu, onOpenHistory, onOpenSaves }: GameScree
 
   return (
     <div className={styles.screen}>
-      <BackgroundLayer background={background} />
       <SpriteLayer sprites={sprites} />
 
-      <div className={styles.topBar}>
-        <Button variant="outline" onClick={onOpenMenu}>
-          Меню
-        </Button>
-        <Button variant="outline" onClick={onOpenHistory}>
-          История
-        </Button>
-        <Button variant="outline" onClick={onOpenSaves}>
-          Сохранить
-        </Button>
-      </div>
+      <GameMenu onOpenMenu={onOpenMenu} onOpenHistory={onOpenHistory} onOpenSaves={onOpenSaves} />
 
       <div className={styles.foreground}>
         <TextBox
