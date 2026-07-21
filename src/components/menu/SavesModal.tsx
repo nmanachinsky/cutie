@@ -14,11 +14,14 @@ export function SavesModal({ isOpen, onClose }: SavesModalProps) {
   const saveToSlot = useGameStore((state) => state.saveToSlot)
   const loadFromSlot = useGameStore((state) => state.loadFromSlot)
   const deleteSlot = useGameStore((state) => state.deleteSlot)
+  const goToMenu = useGameStore((state) => state.goToMenu)
 
   function handleSaveNewSlot() {
     const slotId = crypto.randomUUID()
     const name = new Date().toLocaleString('ru-RU')
     saveToSlot(slotId, name)
+    onClose()
+    goToMenu()
   }
 
   function handleLoad(slotId: string) {
