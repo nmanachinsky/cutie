@@ -20,7 +20,7 @@ export function SpriteLayer({ sprites }: SpriteLayerProps) {
             exit={{ opacity: 0, y: 40 }}
             transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
           >
-            <PlaceholderImage category="sprites" assetKey={sprite.key} className={styles.image} />
+            <PlaceholderImage assetKey={sprite.key} className={styles.image} />
           </motion.div>
         ))}
       </AnimatePresence>

@@ -5,6 +5,7 @@ import { GameScreen } from './components/novel/GameScreen'
 import { HistoryModal } from './components/menu/HistoryModal'
 import { SavesModal } from './components/menu/SavesModal'
 import { AmbientParticles } from './components/novel/AmbientParticles'
+import { AudioController } from './components/novel/AudioController'
 import styles from './App.module.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className={styles.app}>
       <AmbientParticles />
+      <AudioController />
       {screen === 'menu' && <MainMenu onOpenSaves={() => setSavesOpen(true)} />}
       {screen === 'game' && (
         <GameScreen

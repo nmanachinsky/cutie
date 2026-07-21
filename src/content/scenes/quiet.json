@@ -1,6 +1,5 @@
 {
   "id": "quiet",
-  "background": "bedroom_morning",
   "sprites": [{ "key": "cinnamoroll_sleepy", "position": "center" }],
   "text": [
     { "body": "Ты укрываешь его пледом потеплее и садишься рядом, слушая тихое дыхание." },

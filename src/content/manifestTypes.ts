@@ -4,7 +4,6 @@ export interface ManifestEntry {
 }
 
 export interface Manifest {
-  backgrounds: Record<string, ManifestEntry>
   sprites: Record<string, ManifestEntry>
   audio: Record<string, ManifestEntry>
 }

@@ -22,7 +22,6 @@ export interface Choice {
 
 export interface Scene {
   id: string
-  background?: string
   music?: string
   sprites?: SpriteInstance[]
   text: DialogueLine[]

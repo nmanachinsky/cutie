@@ -1,14 +1,4 @@
 {
-  "backgrounds": {
-    "bedroom_morning": {
-      "path": "",
-      "description": "Уютная спальня утром, мягкий свет из окна, пастельно-голубые тона, стиль Cinnamoroll"
-    },
-    "sky_daytime": {
-      "path": "/assets/backgrounds/sky_daytime.png",
-      "description": "Небо среди облаков днём, светло-голубой градиент, стиль Cinnamoroll"
-    }
-  },
   "sprites": {
     "cinnamoroll_sleepy": {
       "path": "",

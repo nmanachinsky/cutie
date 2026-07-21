@@ -1,6 +1,5 @@
 {
   "id": "start",
-  "background": "bedroom_morning",
   "music": "bgm_theme",
   "sprites": [{ "key": "cinnamoroll_sleepy", "position": "center" }],
   "text": [

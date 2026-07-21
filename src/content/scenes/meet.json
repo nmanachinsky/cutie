@@ -1,6 +1,5 @@
 {
   "id": "meet",
-  "background": "bedroom_morning",
   "sprites": [{ "key": "cinnamoroll_wakeup", "position": "center" }],
   "text": [
     { "speaker": "Cinnamoroll", "body": "Ммм... доброе утро! Уши ещё не проснулись." },

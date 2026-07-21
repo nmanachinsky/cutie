@@ -23,7 +23,6 @@ interface GameState {
   currentSceneId: string
   flags: Record<string, FlagValue>
   history: HistoryEntry[]
-  background: string | undefined
   sprites: SpriteInstance[]
   currentMusic: string | undefined
   pendingSfx: string | undefined
@@ -41,16 +40,12 @@ interface GameState {
 
 function loadScene(sceneId: string, flags: Record<string, FlagValue>) {
   const scene = scenes[sceneId]
-  let nextBackground: string | undefined
   let nextSprites: SpriteInstance[] = []
   let nextMusic: string | undefined
   let nextSfx: string | undefined
   let mergedFlags = flags
 
   enterScene(scene, {
-    setBackground: (key) => {
-      nextBackground = key
-    },
     setSprites: (sprites) => {
       nextSprites = sprites
     },
@@ -65,7 +60,7 @@ function loadScene(sceneId: string, flags: Record<string, FlagValue>) {
     },
   })
 
-  return { scene, nextBackground, nextSprites, nextMusic, nextSfx, mergedFlags }
+  return { scene, nextSprites, nextMusic, nextSfx, mergedFlags }
 }
 
 export const useGameStore = create<GameState>()(
@@ -75,23 +70,18 @@ export const useGameStore = create<GameState>()(
       currentSceneId: START_SCENE_ID,
       flags: {},
       history: [],
-      background: undefined,
       sprites: [],
       currentMusic: undefined,
       pendingSfx: undefined,
       saves: {},
 
       startNewGame: () => {
-        const { scene, nextBackground, nextSprites, nextMusic, nextSfx, mergedFlags } = loadScene(
-          START_SCENE_ID,
-          {},
-        )
+        const { scene, nextSprites, nextMusic, nextSfx, mergedFlags } = loadScene(START_SCENE_ID, {})
         set({
           screen: 'game',
           currentSceneId: START_SCENE_ID,
           flags: mergedFlags,
           history: scene.text.map((line) => ({ sceneId: scene.id, ...line })),
-          background: nextBackground,
           sprites: nextSprites,
           currentMusic: nextMusic,
           pendingSfx: nextSfx,
@@ -102,15 +92,11 @@ export const useGameStore = create<GameState>()(
 
       goToScene: (sceneId) => {
         const { flags, history } = get()
-        const { scene, nextBackground, nextSprites, nextMusic, nextSfx, mergedFlags } = loadScene(
-          sceneId,
-          flags,
-        )
+        const { scene, nextSprites, nextMusic, nextSfx, mergedFlags } = loadScene(sceneId, flags)
         set({
           currentSceneId: sceneId,
           flags: mergedFlags,
           history: [...history, ...scene.text.map((line) => ({ sceneId: scene.id, ...line }))],
-          background: nextBackground,
           sprites: nextSprites,
           currentMusic: nextMusic,
           pendingSfx: nextSfx,
@@ -137,13 +123,12 @@ export const useGameStore = create<GameState>()(
       loadFromSlot: (slotId) => {
         const slot = get().saves[slotId]
         if (!slot) return
-        const { nextBackground, nextSprites, nextMusic } = loadScene(slot.sceneId, slot.flags)
+        const { nextSprites, nextMusic } = loadScene(slot.sceneId, slot.flags)
         set({
           screen: 'game',
           currentSceneId: slot.sceneId,
           flags: slot.flags,
           history: slot.history,
-          background: nextBackground,
           sprites: nextSprites,
           currentMusic: nextMusic,
           pendingSfx: undefined,

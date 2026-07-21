@@ -1,6 +1,5 @@
 {
   "id": "ending_good",
-  "background": "sky_daytime",
   "sprites": [{ "key": "cinnamoroll_happy", "position": "center" }],
   "text": [
     { "body": "Он не обиделся, только слегка надул щёки — а через минуту уже снова улыбался." },

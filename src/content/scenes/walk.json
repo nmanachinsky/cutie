@@ -1,6 +1,5 @@
 {
   "id": "walk",
-  "background": "sky_daytime",
   "music": "bgm_theme",
   "sprites": [{ "key": "cinnamoroll_happy", "position": "center" }],
   "sfx": "sfx_chime",
