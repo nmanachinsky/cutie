@@ -1,0 +1,11 @@
+{
+  "id": "start",
+  "background": "bedroom_morning",
+  "music": "bgm_theme",
+  "sprites": [{ "key": "cinnamoroll_sleepy", "position": "center" }],
+  "text": [
+    { "body": "Солнце только тронуло облака за окном, а в комнате уже кто-то тихо посапывает на подушке." },
+    { "body": "Маленький белый комочек с длинными ушками сворачивается клубком — совсем как обычно." }
+  ],
+  "next": "meet"
+}

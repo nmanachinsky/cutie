@@ -1,0 +1,21 @@
+{
+  "id": "meet",
+  "background": "bedroom_morning",
+  "sprites": [{ "key": "cinnamoroll_wakeup", "position": "center" }],
+  "text": [
+    { "speaker": "Cinnamoroll", "body": "Ммм... доброе утро! Уши ещё не проснулись." },
+    { "body": "Он смотрит на тебя большими глазами, явно ожидая, что ты решишь дальше." }
+  ],
+  "choices": [
+    {
+      "label": "Позвать его гулять среди облаков",
+      "setFlags": { "affection": 1 },
+      "next": "walk"
+    },
+    {
+      "label": "Дать ему поспать ещё немного",
+      "setFlags": { "affection": 0 },
+      "next": "quiet"
+    }
+  ]
+}

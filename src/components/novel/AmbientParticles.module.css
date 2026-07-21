@@ -1,0 +1,13 @@
+.layer {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  border-radius: var(--radius-pill);
+  background: radial-gradient(circle, white 0%, oklch(90% 0.03 250 / 0.6) 70%, transparent 100%);
+}

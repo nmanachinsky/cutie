@@ -1,0 +1,27 @@
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  background: repeating-linear-gradient(
+    135deg,
+    var(--color-primary) 0 12px,
+    var(--color-secondary) 12px 24px
+  );
+  opacity: 0.5;
+  border-radius: var(--radius-md);
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.key {
+  font-weight: 700;
+  font-size: var(--text-sm);
+}
+
+.description {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  max-width: 220px;
+}

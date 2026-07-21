@@ -1,0 +1,10 @@
+{
+  "id": "ending_good",
+  "background": "sky_daytime",
+  "sprites": [{ "key": "cinnamoroll_happy", "position": "center" }],
+  "text": [
+    { "body": "Он не обиделся, только слегка надул щёки — а через минуту уже снова улыбался." },
+    { "body": "Концовка: Тёплый день. Не идеально, но всё равно уютно." }
+  ],
+  "isEnding": true
+}

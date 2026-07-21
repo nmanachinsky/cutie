@@ -1,0 +1,70 @@
+:root {
+  --color-bg: oklch(97% 0.015 250);
+  --color-surface: oklch(99% 0.008 250);
+  --color-surface-raised: oklch(100% 0 0);
+  --color-text: oklch(30% 0.04 260);
+  --color-text-muted: oklch(55% 0.03 260);
+  --color-primary: oklch(80% 0.09 245);
+  --color-primary-hover: oklch(74% 0.11 245);
+  --color-primary-pressed: oklch(68% 0.12 245);
+  --color-secondary: oklch(90% 0.05 20);
+  --color-secondary-hover: oklch(85% 0.07 20);
+  --color-accent: oklch(85% 0.1 300);
+  --color-border: oklch(88% 0.02 250);
+  --color-shadow: oklch(60% 0.05 260 / 0.18);
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 4px 16px var(--color-shadow);
+  --shadow-raised: 0 8px 28px var(--color-shadow);
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.75rem;
+  --space-xl: 3rem;
+
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background:
+    linear-gradient(180deg, oklch(70% 0.09 250 / 0.35), oklch(94% 0.02 250 / 0.55)),
+    url('/assets/backgrounds/sky_daytime.png') center / cover no-repeat fixed;
+  color: var(--color-text);
+  font-family:
+    'Nunito',
+    'Segoe UI',
+    system-ui,
+    sans-serif;
+  font-size: var(--text-base);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+button {
+  font-family: inherit;
+}

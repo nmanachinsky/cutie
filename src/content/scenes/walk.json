@@ -1,0 +1,23 @@
+{
+  "id": "walk",
+  "background": "sky_daytime",
+  "music": "bgm_theme",
+  "sprites": [{ "key": "cinnamoroll_happy", "position": "center" }],
+  "sfx": "sfx_chime",
+  "text": [
+    { "body": "Вы вдвоём взлетаете над облаками — его ушки работают как крылья." },
+    { "speaker": "Cinnamoroll", "body": "Смотри, что я нашёл! Сахарная вата прямо из облака!" }
+  ],
+  "choices": [
+    {
+      "label": "Поделиться сахарной ватой пополам",
+      "setFlags": { "affection": 2 },
+      "next": "ending_best"
+    },
+    {
+      "label": "Оставить всё себе",
+      "setFlags": { "affection": 1 },
+      "next": "ending_good"
+    }
+  ]
+}

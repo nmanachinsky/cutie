@@ -1,0 +1,10 @@
+{
+  "id": "ending_best",
+  "background": "sky_daytime",
+  "sprites": [{ "key": "cinnamoroll_happy", "position": "center" }],
+  "text": [
+    { "speaker": "Cinnamoroll", "body": "Пополам — это же вдвое вкуснее!" },
+    { "body": "Концовка: Лучшие друзья навсегда. Ваша дружба крепче любого облака." }
+  ],
+  "isEnding": true
+}

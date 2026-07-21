@@ -1,0 +1,40 @@
+{
+  "backgrounds": {
+    "bedroom_morning": {
+      "path": "",
+      "description": "Уютная спальня утром, мягкий свет из окна, пастельно-голубые тона, стиль Cinnamoroll"
+    },
+    "sky_daytime": {
+      "path": "/assets/backgrounds/sky_daytime.png",
+      "description": "Небо среди облаков днём, светло-голубой градиент, стиль Cinnamoroll"
+    }
+  },
+  "sprites": {
+    "cinnamoroll_sleepy": {
+      "path": "",
+      "description": "Cinnamoroll, сонная поза, закрытые глаза, зевает"
+    },
+    "cinnamoroll_wakeup": {
+      "path": "",
+      "description": "Cinnamoroll просыпается, удивлённое выражение, привстал"
+    },
+    "cinnamoroll_happy": {
+      "path": "",
+      "description": "Cinnamoroll счастливый, стоит, машет лапкой"
+    }
+  },
+  "audio": {
+    "bgm_theme": {
+      "path": "",
+      "description": "Фоновая мелодия, лёгкая, милая, зацикленная"
+    },
+    "sfx_click": {
+      "path": "",
+      "description": "Короткий мягкий звук клика по UI"
+    },
+    "sfx_chime": {
+      "path": "",
+      "description": "Тёплый звон-колокольчик при выборе варианта в диалоге"
+    }
+  }
+}

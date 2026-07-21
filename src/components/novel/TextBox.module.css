@@ -1,0 +1,33 @@
+.box {
+  position: relative;
+  background: oklch(99% 0.006 250 / 0.92);
+  backdrop-filter: blur(6px);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-raised);
+  padding: var(--space-lg);
+  min-height: 6rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.speaker {
+  display: inline-block;
+  font-weight: 800;
+  color: var(--color-primary-pressed);
+  margin-bottom: var(--space-xs);
+}
+
+.body {
+  margin: 0;
+  font-size: var(--text-lg);
+  line-height: 1.5;
+  min-height: 3.2rem;
+}
+
+.hint {
+  position: absolute;
+  bottom: var(--space-sm);
+  right: var(--space-lg);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}

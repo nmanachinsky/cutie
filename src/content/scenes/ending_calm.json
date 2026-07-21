@@ -1,0 +1,10 @@
+{
+  "id": "ending_calm",
+  "background": "bedroom_morning",
+  "sprites": [{ "key": "cinnamoroll_sleepy", "position": "center" }],
+  "text": [
+    { "body": "К обеду он просыпается сам, потягивается и утыкается носом тебе в ладонь." },
+    { "body": "Концовка: Тихое утро. Иногда покой — лучший подарок." }
+  ],
+  "isEnding": true
+}

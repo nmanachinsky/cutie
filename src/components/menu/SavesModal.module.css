@@ -1,0 +1,19 @@
+.slot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm);
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  gap: var(--space-sm);
+}
+
+.slotActions {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.empty {
+  color: var(--color-text-muted);
+  text-align: center;
+}

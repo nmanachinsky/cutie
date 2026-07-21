@@ -1,0 +1,42 @@
+.button {
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 0.7rem 1.5rem;
+  font-size: var(--text-base);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+}
+
+.primary {
+  background: var(--color-primary);
+  color: var(--color-text);
+}
+
+.primary:hover {
+  background: var(--color-primary-hover);
+}
+
+.primary:active {
+  background: var(--color-primary-pressed);
+}
+
+.secondary {
+  background: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.secondary:hover {
+  background: var(--color-secondary-hover);
+}
+
+.outline {
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-border);
+  box-shadow: none;
+}
+
+.outline:hover {
+  border-color: var(--color-primary);
+}
