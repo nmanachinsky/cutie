@@ -1,6 +1,7 @@
 import manifestData from '../../content/manifest.json'
 import type { Manifest } from '../../content/manifestTypes'
 import { resolveAsset } from '../../content/manifestTypes'
+import { assetUrl } from '../../lib/assetUrl'
 
 const manifest = manifestData as Manifest
 
@@ -14,5 +15,5 @@ export function PlaceholderImage({ category, assetKey, className }: PlaceholderI
   const entry = resolveAsset(manifest, category, assetKey)
   if (!entry?.path) return null
 
-  return <img src={entry.path} alt={assetKey} className={className} />
+  return <img src={assetUrl(entry.path)} alt={assetKey} className={className} />
 }

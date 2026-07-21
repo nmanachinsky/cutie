@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { createPortal } from 'react-dom'
 import { AnimatePresence, motion } from 'framer-motion'
+import { assetUrl } from '../../lib/assetUrl'
 import styles from './GameMenu.module.css'
 
 interface GameMenuProps {
@@ -50,27 +51,31 @@ export function GameMenu({ onOpenMenu, onOpenHistory, onOpenSaves }: GameMenuPro
                 transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
                 onClick={(event) => event.stopPropagation()}
               >
-                <img src="/assets/ui/menu-illustration.png" alt="" className={styles.illustration} />
+                <img
+                  src={assetUrl('assets/ui/menu-illustration.png')}
+                  alt=""
+                  className={styles.illustration}
+                />
 
                 <div className={styles.items}>
                   <button type="button" className={styles.item} onClick={() => runAndClose(onOpenMenu)}>
-                    <img src="/assets/ui/icon-menu.png" alt="" className={styles.icon} />
+                    <img src={assetUrl('assets/ui/icon-menu.png')} alt="" className={styles.icon} />
                     <span className={styles.label}>Меню</span>
                     <span className={styles.chevron}>›</span>
                   </button>
                   <button type="button" className={styles.item} onClick={() => runAndClose(onOpenHistory)}>
-                    <img src="/assets/ui/icon-history.png" alt="" className={styles.icon} />
+                    <img src={assetUrl('assets/ui/icon-history.png')} alt="" className={styles.icon} />
                     <span className={styles.label}>История</span>
                     <span className={styles.chevron}>›</span>
                   </button>
                   <button type="button" className={styles.item} onClick={() => runAndClose(onOpenSaves)}>
-                    <img src="/assets/ui/icon-save.png" alt="" className={styles.icon} />
+                    <img src={assetUrl('assets/ui/icon-save.png')} alt="" className={styles.icon} />
                     <span className={styles.label}>Сохранить</span>
                     <span className={styles.chevron}>›</span>
                   </button>
                 </div>
 
-                <img src="/assets/ui/menu-bottom.png" alt="" className={styles.bottomDecor} />
+                <img src={assetUrl('assets/ui/menu-bottom.png')} alt="" className={styles.bottomDecor} />
               </motion.div>
             </motion.div>
           )}
