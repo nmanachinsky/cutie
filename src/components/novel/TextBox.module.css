@@ -6,7 +6,7 @@
   box-shadow: var(--shadow-raised);
   padding: var(--space-lg);
   min-height: 6rem;
-  max-height: 34vh;
+  max-height: 34dvh;
   display: flex;
   flex-direction: column;
   cursor: pointer;
