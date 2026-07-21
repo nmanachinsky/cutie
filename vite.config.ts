@@ -84,6 +84,7 @@ export default defineConfig({
     phoneFrame(),
     VitePWA({
       registerType: 'autoUpdate',
+      includeAssets: ['icon.svg', 'apple-touch-icon.png'],
       manifest: {
         name: 'Облачное утро',
         short_name: 'Облачное утро',
@@ -92,10 +93,11 @@ export default defineConfig({
         background_color: '#eaf3fc',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: '/',
+        start_url: '.',
+        scope: '.',
         icons: [
-          { src: '/icon.svg', sizes: '192x192', type: 'image/svg+xml' },
-          { src: '/icon.svg', sizes: '512x512', type: 'image/svg+xml' },
+          { src: 'icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: 'icon-512.png', sizes: '512x512', type: 'image/png' },
         ],
       },
     }),
