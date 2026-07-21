@@ -67,7 +67,7 @@
   gap: var(--space-sm);
   border: 1px solid var(--color-primary);
   border-radius: var(--radius-sm);
-  background: var(--color-surface-raised);
+  background: rgb(240 247 255);
   color: var(--color-primary-pressed);
   font-size: var(--text-base);
   font-weight: 700;
