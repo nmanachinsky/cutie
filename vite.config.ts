@@ -86,8 +86,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: 'Облачное утро',
-        short_name: 'Облачное утро',
+        name: 'Морошковый свет',
+        short_name: 'Морошковый свет',
         description: 'Интерактивная новелла с ветвящимся сюжетом',
         theme_color: '#6a9bea',
         background_color: '#eaf3fc',
