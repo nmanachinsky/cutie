@@ -1,21 +1,113 @@
 import type { Scene } from '../../engine/types'
 import start from './start.json'
-import meet from './meet.json'
-import walk from './walk.json'
-import quiet from './quiet.json'
-import endingBest from './ending_best.json'
-import endingGood from './ending_good.json'
-import endingCalm from './ending_calm.json'
+import awake from './awake.json'
+import nicoleMeet from './nicole_meet.json'
+import nicoleExplain from './nicole_explain.json'
+import nicoleReassure from './nicole_reassure.json'
+import nicoleGlad from './nicole_glad.json'
+import hutRoad from './hut_road.json'
+import shroomA from './shroom_a.json'
+import hutArrive from './hut_arrive.json'
+import hutRest from './hut_rest.json'
+import hutTea from './hut_tea.json'
+import hutHurry from './hut_hurry.json'
+import swampRoad from './swamp_road.json'
+import swampScream from './swamp_scream.json'
+import kuromiMeet from './kuromi_meet.json'
+import kikimoraCalm from './kikimora_calm.json'
+import kikimoraRetreat from './kikimora_retreat.json'
+import kikimoraShoutback from './kikimora_shoutback.json'
+import kikimoraStoryOffer from './kikimora_story_offer.json'
+import kikimoraStory from './kikimora_story.json'
+import swampGift from './swamp_gift.json'
+import swampShroom from './swamp_shroom.json'
+import fogRoad from './fog_road.json'
+import officeEnter from './office_enter.json'
+import miyaMeet from './miya_meet.json'
+import bossScene from './boss_scene.json'
+import officeLeave from './office_leave.json'
+import pollenField from './pollen_field.json'
+import mymelodyHelp from './mymelody_help.json'
+import pollenPushthrough from './pollen_pushthrough.json'
+import shopRoad from './shop_road.json'
+import shopEnter from './shop_enter.json'
+import cupScene from './cup_scene.json'
+import shopShroomOffer from './shop_shroom_offer.json'
+import shopShroom from './shop_shroom.json'
+import shopCupOffer from './shop_cup_offer.json'
+import cupSceneLate from './cup_scene_late.json'
+import lakeRoad from './lake_road.json'
+import lakeSpirit from './lake_spirit.json'
+import moonNight from './moon_night.json'
+import fireRest from './fire_rest.json'
+import nightMarch from './night_march.json'
+import dawnApproach from './dawn_approach.json'
+import nameMoment from './name_moment.json'
+import hubClearing from './hub_clearing.json'
+import gate from './gate.json'
+import endingDawn from './ending_dawn.json'
+import endingVoice from './ending_voice.json'
+import endingWarmth from './ending_warmth.json'
+import endingMist from './ending_mist.json'
+import endingTrue from './ending_true.json'
+import endingLantern from './ending_lantern.json'
+import endingShroom from './ending_shroom.json'
 
 /** Scene registry — add a new chapter by adding a JSON file and one line here. */
 export const scenes: Record<string, Scene> = {
   start: start as Scene,
-  meet: meet as Scene,
-  walk: walk as Scene,
-  quiet: quiet as Scene,
-  ending_best: endingBest as Scene,
-  ending_good: endingGood as Scene,
-  ending_calm: endingCalm as Scene,
+  awake: awake as Scene,
+  nicole_meet: nicoleMeet as Scene,
+  nicole_explain: nicoleExplain as Scene,
+  nicole_reassure: nicoleReassure as Scene,
+  nicole_glad: nicoleGlad as Scene,
+  hut_road: hutRoad as Scene,
+  shroom_a: shroomA as Scene,
+  hut_arrive: hutArrive as Scene,
+  hut_rest: hutRest as Scene,
+  hut_tea: hutTea as Scene,
+  hut_hurry: hutHurry as Scene,
+  swamp_road: swampRoad as Scene,
+  swamp_scream: swampScream as Scene,
+  kuromi_meet: kuromiMeet as Scene,
+  kikimora_calm: kikimoraCalm as Scene,
+  kikimora_retreat: kikimoraRetreat as Scene,
+  kikimora_shoutback: kikimoraShoutback as Scene,
+  kikimora_story_offer: kikimoraStoryOffer as Scene,
+  kikimora_story: kikimoraStory as Scene,
+  swamp_gift: swampGift as Scene,
+  swamp_shroom: swampShroom as Scene,
+  fog_road: fogRoad as Scene,
+  office_enter: officeEnter as Scene,
+  miya_meet: miyaMeet as Scene,
+  boss_scene: bossScene as Scene,
+  office_leave: officeLeave as Scene,
+  pollen_field: pollenField as Scene,
+  mymelody_help: mymelodyHelp as Scene,
+  pollen_pushthrough: pollenPushthrough as Scene,
+  shop_road: shopRoad as Scene,
+  shop_enter: shopEnter as Scene,
+  cup_scene: cupScene as Scene,
+  shop_shroom_offer: shopShroomOffer as Scene,
+  shop_shroom: shopShroom as Scene,
+  shop_cup_offer: shopCupOffer as Scene,
+  cup_scene_late: cupSceneLate as Scene,
+  lake_road: lakeRoad as Scene,
+  lake_spirit: lakeSpirit as Scene,
+  moon_night: moonNight as Scene,
+  fire_rest: fireRest as Scene,
+  night_march: nightMarch as Scene,
+  dawn_approach: dawnApproach as Scene,
+  name_moment: nameMoment as Scene,
+  hub_clearing: hubClearing as Scene,
+  gate: gate as Scene,
+  ending_dawn: endingDawn as Scene,
+  ending_voice: endingVoice as Scene,
+  ending_warmth: endingWarmth as Scene,
+  ending_mist: endingMist as Scene,
+  ending_true: endingTrue as Scene,
+  ending_lantern: endingLantern as Scene,
+  ending_shroom: endingShroom as Scene,
 }
 
 export const START_SCENE_ID = 'start'
