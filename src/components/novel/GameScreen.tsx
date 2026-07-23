@@ -62,7 +62,9 @@ export function GameScreen({ onOpenMenu, onOpenHistory, onOpenSaves }: GameScree
 
   return (
     <div className={styles.screen}>
-      <SpriteLayer sprites={sprites} />
+      <div className={styles.spriteRegion}>
+        <SpriteLayer sprites={sprites} />
+      </div>
 
       <GameMenu onOpenMenu={onOpenMenu} onOpenHistory={onOpenHistory} onOpenSaves={onOpenSaves} />
 
