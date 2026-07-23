@@ -4,29 +4,39 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  gap: var(--space-sm);
   padding: 0 var(--space-lg);
   pointer-events: none;
 }
 
+/* flex-shrink lets up to 3 sprites (left/center/right) coexist without ever
+   overlapping horizontally; height: 100% + object-fit: contain on the image
+   keeps any sprite, regardless of its native size, inside the reserved
+   sprite region (which itself clips via overflow: hidden). */
 .slot {
-  width: min(45vw, 320px);
-  height: min(60vh, 480px);
+  flex: 0 1 min(38%, 200px);
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .left {
-  align-self: flex-end;
+  justify-content: flex-start;
 }
 
 .center {
+  justify-content: center;
   margin: 0 auto;
 }
 
 .right {
-  align-self: flex-end;
+  justify-content: flex-end;
 }
 
 .image {
-  width: 100%;
-  height: 100%;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }

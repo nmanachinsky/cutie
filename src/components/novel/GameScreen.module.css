@@ -3,20 +3,34 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fixed share of the screen reserved for sprites/backgrounds art.
+   flex-shrink: 0 keeps this reserved even if .foreground content grows,
+   so art and text can never overlap regardless of scene content. */
+.spriteRegion {
+  position: relative;
+  flex: 0 0 35%;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .foreground {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: env(safe-area-inset-bottom, 0);
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
   padding: var(--space-md);
+  padding-bottom: calc(var(--space-md) + env(safe-area-inset-bottom, 0));
+  overflow-y: auto;
   z-index: 5;
 }
 
 .endingButton {
   align-self: center;
+  flex-shrink: 0;
 }
