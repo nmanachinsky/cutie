@@ -1,71 +1,71 @@
 {
   "sprites": {
     "cinnamoroll_sleepy": {
-      "path": "",
+      "path": "assets/ui/cinnamoroll_sleepy.png",
       "description": "Cinnamoroll, сонная поза, закрытые глаза, зевает"
     },
     "cinnamoroll_wakeup": {
-      "path": "",
+      "path": "assets/ui/cinnamoroll_wakeup.png",
       "description": "Cinnamoroll просыпается, удивлённое выражение, привстал"
     },
     "cinnamoroll_happy": {
-      "path": "",
+      "path": "assets/ui/cinnamoroll_happy.png",
       "description": "Cinnamoroll счастливый, стоит, машет лапкой"
     },
     "nicole_calm": {
-      "path": "",
+      "path": "assets/ui/nicole_calm.png",
       "description": "Николь, спокойная, мягкий взгляд, руки сложены; заострённые уши, светлые одежды провидицы"
     },
     "nicole_smile": {
-      "path": "",
+      "path": "assets/ui/nicole_smile.png",
       "description": "Николь, тёплая улыбка, чуть наклонила голову"
     },
     "nicole_wings": {
-      "path": "",
+      "path": "assets/ui/nicole_wings.png",
       "description": "Николь с расправленными крыльями — золотое сияние в форме бабочки"
     },
     "kuromi_smug": {
-      "path": "",
+      "path": "assets/ui/kuromi_smug.png",
       "description": "Куроми, дерзкая ухмылка, руки в боки, чёрный колпачок с черепком"
     },
     "kuromi_laugh": {
-      "path": "",
+      "path": "assets/ui/kuromi_laugh.png",
       "description": "Куроми хохочет, зажмурилась, держится за живот"
     },
     "mymelody_happy": {
-      "path": "",
+      "path": "assets/ui/mymelody_happy.png",
       "description": "Май Мелоди, розовый капюшончик, тёплая улыбка, в лапках вышитый платок"
     },
     "kikimora_shout": {
-      "path": "",
+      "path": "assets/ui/kikimora_shout.png",
       "description": "Кикимора Тихоня кричит: растрёпанные волосы-осока, руки вверх, вокруг брызги болота"
     },
     "kikimora_soft": {
-      "path": "",
+      "path": "assets/ui/kikimora_soft.png",
       "description": "Кикимора Тихоня притихшая, ссутулилась, прижимает к груди болотный огонёк"
     },
     "miya_dim": {
-      "path": "",
+      "path": "assets/ui/miya_dim.png",
       "description": "Мия, девочка-светлячок, потускневшее свечение, опущенные плечи, стопка туманных свитков"
     },
     "miya_bright": {
-      "path": "",
+      "path": "assets/ui/miya_bright.png",
       "description": "Мия сияет ярко-тёплым светом, расправила крылышки, улыбается"
     },
     "boss_fog": {
-      "path": "",
+      "path": "assets/ui/boss_fog.png",
       "description": "Начальник Тумана: солидный силуэт из тумана, половина фигуры выцвела в серое"
     },
     "soroka_chara": {
-      "path": "",
+      "path": "assets/ui/soroka_chara.png",
       "description": "Сорока Чара: хитрый блеск в глазу, монокль, лавка блестящих редкостей за спиной"
     },
     "marfa_warm": {
-      "path": "",
+      "path": "assets/ui/marfa_warn.png",
       "description": "Бабушка Марфа: платок, добрые морщинки, кружка дымящегося отвара в руках"
     },
     "onego_calm": {
-      "path": "",
+      "path": "assets/ui/onego_calm.png",
       "description": "Дух озера Онего: огромный спокойный силуэт из воды, борода из волн, звёзды в глубине"
     }
   },
