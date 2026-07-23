@@ -2,18 +2,22 @@
   position: absolute;
   inset: 0;
   display: grid;
-  grid-template-rows: 100%;
   gap: var(--space-sm);
   padding: 0 var(--space-lg);
   pointer-events: none;
 }
 
-/* Each slot owns its whole grid column (see SpriteLayer.tsx for how many
-   columns exist), so with one sprite the slot — and the image inside it —
-   spans the full width instead of being capped to a fraction of it. */
+/* A solo sprite goes edge-to-edge — the art already fills nearly its whole
+   canvas, so the side padding was pure lost width (and, since these images
+   are wider than they are tall, lost width means a visibly smaller render). */
+.fullBleed {
+  padding: 0;
+  gap: 0;
+}
+
 .slot {
   min-width: 0;
-  height: 100%;
+  min-height: 0;
   display: flex;
   align-items: flex-end;
   justify-content: center;
