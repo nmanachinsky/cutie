@@ -6,7 +6,6 @@
   box-shadow: var(--shadow-raised);
   padding: var(--space-lg);
   min-height: 6rem;
-  max-height: 34dvh;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -21,13 +20,26 @@
   margin-bottom: var(--space-xs);
 }
 
-.body {
-  flex: 1 1 auto;
-  min-height: 0;
+.bodyWrap {
+  position: relative;
+}
+
+.body,
+.bodyGhost {
   margin: 0;
   font-size: var(--text-lg);
   line-height: 1.5;
-  overflow-y: auto;
+}
+
+/* Invisible, holds the box open at the final line's height throughout the
+   typewriter reveal so nothing above it has to resize mid-animation. */
+.bodyGhost {
+  visibility: hidden;
+}
+
+.body {
+  position: absolute;
+  inset: 0;
 }
 
 .hint {

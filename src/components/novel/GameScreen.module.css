@@ -7,26 +7,30 @@
   flex-direction: column;
 }
 
-/* Fixed share of the screen reserved for sprites/backgrounds art.
-   flex-shrink: 0 keeps this reserved even if .foreground content grows,
-   so art and text can never overlap regardless of scene content. */
+/* Art fills whatever the text isn't using. min-height is a floor so an
+   unusually long line/choice list can't squeeze it away entirely; below
+   that floor .foreground no longer shrinks and, since .screen clips
+   overflow, extra text height is clipped rather than ever overlapping
+   the art (this project keeps dialogue short enough that the floor is
+   never actually hit in practice). */
 .spriteRegion {
   position: relative;
-  flex: 0 0 35%;
-  min-height: 0;
+  flex: 1 1 auto;
+  min-height: 18%;
   overflow: hidden;
 }
 
+/* Sized to its content (text + choices), not stretched — this is what
+   makes the box grow upward from the bottom edge as content is added,
+   instead of the screen being pre-split into fixed regions. */
 .foreground {
   position: relative;
-  flex: 1 1 auto;
-  min-height: 0;
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
   padding: var(--space-md);
   padding-bottom: calc(var(--space-md) + env(safe-area-inset-bottom, 0));
-  overflow-y: auto;
   z-index: 5;
 }
 

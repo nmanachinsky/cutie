@@ -35,7 +35,15 @@ export function TextBox({ line, onAdvance, canAdvance, onDone }: TextBoxProps) {
       transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
     >
       {line.speaker && <span className={styles.speaker}>{line.speaker}</span>}
-      <p className={styles.body}>{displayed}</p>
+      <div className={styles.bodyWrap}>
+        {/* Sized to the final line text so the box's height (and thus the sprite
+            region above it) is stable from the first frame, instead of growing
+            line-by-line as the typewriter reveals characters. */}
+        <p className={styles.bodyGhost} aria-hidden="true">
+          {line.body}
+        </p>
+        <p className={styles.body}>{displayed}</p>
+      </div>
       {isDone && canAdvance && <span className={styles.hint}>▾ нажми, чтобы продолжить</span>}
     </motion.div>
   )
